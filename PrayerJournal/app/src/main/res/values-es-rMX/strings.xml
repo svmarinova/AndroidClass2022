@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Diario de oración</string>
+    <string name="first_fragment_label">Ingrese su oración</string>
+    <string name="next">Ahorrar</string>
+    <string name="petitionText">Petición</string>
+    <string name="prayersOthersHint">Oraciones por otras</string>
+    <string name="confessionsHint">Tus confesiones aquí</string>
+    <string name="hintPraise">Alabanzas a Dios</string>
+    <string name="textPraise">Alabanzas</string>
+    <string name="hintThankful">Agradecido con Dios por</string>
+    <string name="textThanks">Gracias</string>
+    <string name="textConfess">Confesar</string>
+    <string name="textOthers">Otras</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="messageConfirmSave">¿Estás segura de que quieres guardar esta entrada?</string>
+    <string name="messageSaved">Salvado</string>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Prayer Journal</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Enter Your Prayer</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Save</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="petitionText">Petition</string>
+    <string name="prayersOthersHint">Prayers for others</string>
+    <string name="confessionsHint">Your confessions here</string>
+    <string name="hintPraise" >Praises to God</string>
+    <string name="textPraise">Praises</string>
+    <string name="hintThankful">Thankful to God for</string>
+    <string name="textThanks">Thanks</string>
+    <string name="textConfess">Confess</string>
+    <string name="textOthers">Others</string>
+    <string name="action_settings">Settings</string>
+    <string name="messageConfirmSave">Are you sure you want to save this entry?</string>
+    <string name="messageSaved">Saved</string>
+    <string name="hintPetition">Prayers</string>
+</resources>
