@@ -15,4 +15,5 @@
     <string name="action_settings">Ajustes</string>
     <string name="messageConfirmSave">¿Estás segura de que quieres guardar esta entrada?</string>
     <string name="messageSaved">Salvado</string>
+    <string name="hintPetition">Petición</string>
 </resources>

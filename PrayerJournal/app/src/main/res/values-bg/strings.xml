@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Молитвеник</string>
+    <string name="first_fragment_label">Вашата молитва</string>
+    <string name="next">Запази</string>
+    <string name="petitionText">Петиция</string>
+    <string name="prayersOthersHint">Молитви за другите</string>
+    <string name="confessionsHint">Изповед</string>
+    <string name="hintPraise">Хвалби за Бог</string>
+    <string name="textPraise">Хвалби</string>
+    <string name="hintThankful">Благодарности за Бог</string>
+    <string name="textThanks">Благодарности</string>
+    <string name="textConfess">Изповед</string>
+    <string name="textOthers">Други</string>
+    <string name="action_settings">Настройки</string>
+    <string name="messageConfirmSave">Потвърдете запазване?</string>
+    <string name="messageSaved">Запазено</string>
+    <string name="hintPetition">Молитви</string>
+</resources>
