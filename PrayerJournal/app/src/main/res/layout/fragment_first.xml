@@ -2,34 +2,38 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.PrayerJournal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
     <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/petitionText"
-            app:layout_constraintEnd_toEndOf="@+id/editThanks"
-            app:layout_constraintStart_toStartOf="@+id/editThanks"
-            app:layout_constraintTop_toBottomOf="@+id/editThanks" />
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/petitionText"
+        app:layout_constraintEnd_toEndOf="@+id/editThanks"
+        app:layout_constraintStart_toStartOf="@+id/editThanks"
+        app:layout_constraintTop_toBottomOf="@+id/editThanks" />
 
     <EditText
-            android:id="@+id/editOthers"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="@string/prayersOthersHint"
-            android:inputType="textMultiLine"
-            app:layout_constraintBottom_toBottomOf="@+id/editPetition"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editPetition"
-            app:layout_constraintTop_toTopOf="@+id/editPetition" />
+        android:id="@+id/editOthers"
+        style="@style/Theme.PrayerJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/prayersOthersHint"
+        android:inputType="textMultiLine"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintBottom_toBottomOf="@+id/editPetition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editPetition"
+        app:layout_constraintTop_toTopOf="@+id/editPetition" />
 
     <EditText
         android:id="@+id/editConfess"
+        style="@style/Theme.PrayerJournal"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:ems="10"
@@ -44,6 +48,7 @@
 
     <EditText
         android:id="@+id/editPetition"
+        style="@style/Theme.PrayerJournal"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:ems="10"
@@ -55,16 +60,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-            android:id="@+id/btnSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editPraise"
+        style="@style/Theme.PrayerJournal"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:ems="10"
@@ -77,17 +83,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textPraise"
-            app:layout_constraintEnd_toEndOf="@+id/editPraise"
-            app:layout_constraintHorizontal_bias="0.348"
-            app:layout_constraintStart_toStartOf="@+id/editPraise"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textPraise"
+        app:layout_constraintEnd_toEndOf="@+id/editPraise"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="@+id/editPraise"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editThanks"
+        style="@style/Theme.PrayerJournal"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:ems="10"
@@ -100,29 +107,29 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textThanks"
-            app:layout_constraintEnd_toEndOf="@+id/editThanks"
-            app:layout_constraintStart_toStartOf="@+id/editThanks"
-            app:layout_constraintTop_toBottomOf="@+id/editPraise" />
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textThanks"
+        app:layout_constraintEnd_toEndOf="@+id/editThanks"
+        app:layout_constraintStart_toStartOf="@+id/editThanks"
+        app:layout_constraintTop_toBottomOf="@+id/editPraise" />
 
     <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textConfess"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/editConfess"
-            app:layout_constraintTop_toBottomOf="@+id/editPraise" />
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textConfess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editConfess"
+        app:layout_constraintTop_toBottomOf="@+id/editPraise" />
 
     <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textOthers"
-            app:layout_constraintBottom_toTopOf="@+id/editOthers"
-            app:layout_constraintEnd_toEndOf="@+id/editOthers"
-            app:layout_constraintStart_toStartOf="@+id/editOthers" />
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textOthers"
+        app:layout_constraintBottom_toTopOf="@+id/editOthers"
+        app:layout_constraintEnd_toEndOf="@+id/editOthers"
+        app:layout_constraintStart_toStartOf="@+id/editOthers" />
 </androidx.constraintlayout.widget.ConstraintLayout>
