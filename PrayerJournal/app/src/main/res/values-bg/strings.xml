@@ -16,4 +16,5 @@
     <string name="messageConfirmSave">Потвърдете запазване?</string>
     <string name="messageSaved">Запазено</string>
     <string name="hintPetition">Молитви</string>
+    <string name="messageConfirmDeleteAll">Потвърдете изтриване?</string>
 </resources>

@@ -1,26 +1,31 @@
 package com.gmail.sv.marinova.prayerjournal
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.Spinner
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.gmail.sv.marinova.prayerjournal.databinding.FragmentFirstBinding
+import androidx.room.Database
+import com.gmail.sv.marinova.prayerjournal.databinding.FragmentFirst2Binding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.time.LocalDateTime
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class First2Fragment : Fragment() {
 
-    private var _binding: FragmentFirstBinding? = null
+    private var _binding: FragmentFirst2Binding? = null
     private lateinit var prayerLogViewModel: PrayerLogViewModel
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -31,30 +36,29 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = FragmentFirst2Binding.inflate(inflater, container, false)
         prayerLogViewModel = ViewModelProvider(this).get(PrayerLogViewModel::class.java)
 
         return binding.root
+
+    }
+    fun Fragment.emptyDatabase() {
+        prayerLogViewModel.deleteAll()
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnSave.setOnClickListener {
-            //findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-
+        binding.buttonAdd.setOnClickListener {
+            val activityIntent = Intent(activity,MainActivity::class.java)
+            startActivity(activityIntent)
+        }
+        binding.btnDeleteAll.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
-                .setMessage(getString(R.string.messageConfirmSave))
+                .setMessage(getString(R.string.messageConfirmDeleteAll))
                 .setPositiveButton("Save") { dialog, which ->
-                 var editPraise = view.findViewById<EditText?>(R.id.editPraise)
-                    var editThanks = view.findViewById<EditText?>(R.id.editThanks)
-                    var editConsfess = view.findViewById<EditText?>(R.id.editConfess)
-                    var editPetition = view.findViewById<EditText?>(R.id.editPetition)
-                    var editOthers = view.findViewById<EditText?>(R.id.editOthers)
-                    val prayer = PrayerLog(LocalDateTime.now().toString(),editPraise.text.toString(), editThanks.text.toString(), editConsfess.text.toString(), editPetition.text.toString(), editOthers.text.toString()  )
-                    prayerLogViewModel.insert(prayer)
-                    Toast.makeText(requireContext(), getString(R.string.messageSaved), Toast.LENGTH_LONG).show()
+                    prayerLogViewModel.deleteAll()
                 }
                 .setNegativeButton("Cancel") { dialog, which ->
                     // Respond to positive button press
@@ -62,7 +66,6 @@ class FirstFragment : Fragment() {
                 .show()
         }
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

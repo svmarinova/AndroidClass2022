@@ -16,4 +16,5 @@
     <string name="messageConfirmSave">¿Estás segura de que quieres guardar esta entrada?</string>
     <string name="messageSaved">Salvado</string>
     <string name="hintPetition">Petición</string>
+    <string name="messageConfirmDeleteAll">¿Estás seguro de que quieres eliminar todas las oraciones?</string>
 </resources>
