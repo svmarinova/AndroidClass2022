@@ -17,4 +17,6 @@
     <string name="messageSaved">Запазено</string>
     <string name="hintPetition">Молитви</string>
     <string name="messageConfirmDeleteAll">Потвърдете изтриване?</string>
+    <string name="textBtnAdd">Добави молитва</string>
+    <string name="title_activity_prayer_list">Молитвен дневник</string>
 </resources>

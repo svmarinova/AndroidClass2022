@@ -23,5 +23,8 @@
     <string name="messageSaved">Saved</string>
     <string name="hintPetition">Prayers</string>
     <string name="title_activity_prayer_list">Prayer Log</string>
+    <string name="facebook_app_id">375785864362680</string>
+<string name="fb_login_protocol_scheme">fb375785864362680</string>
+<string name="facebook_client_token">81a587398de101cf4d1d35af8431cda7</string>
     <string name="textBtnAdd">Add Prayer</string>
 </resources>
