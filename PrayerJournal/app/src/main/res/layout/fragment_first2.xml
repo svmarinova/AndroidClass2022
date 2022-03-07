@@ -19,11 +19,14 @@
 
     <ListView
         android:id="@+id/listPrayerLogs"
+        style="@android:style/Widget.Material.Light.ListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:footerDividersEnabled="false"
+        android:textAlignment="center"
         android:theme="@style/Theme.PrayerJournal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

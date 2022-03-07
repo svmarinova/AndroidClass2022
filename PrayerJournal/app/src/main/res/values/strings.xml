@@ -1,30 +1,55 @@
 <resources>
-    <string name="app_name">Prayer Journal</string>
+    <string name="app_name">Christian Prayer Journal</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Enter Your Prayer</string>
+    <string name="first_fragment_label">Christian Prayer Log</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Save</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="petitionText">Petition</string>
+    <string name="petitionText">4. Petition</string>
     <string name="prayersOthersHint">Prayers for others</string>
-    <string name="confessionsHint">Your confessions here</string>
-    <string name="hintPraise">Praises to God</string>
-    <string name="textPraise">Praises</string>
-    <string name="hintThankful">Thankful to God for</string>
-    <string name="textThanks">Thanks</string>
-    <string name="textConfess">Confess</string>
-    <string name="textOthers">Others</string>
+    <string name="confessionsHint">Allow God to cleanse your heart from unconfessed sin.Ask God to search your heart for areas that displease Him.</string>
+    <string name="hintPraise">During this time, focus directly on God, adoring Him for Who He is-- His names, His character, His roles, etc. Worship and praise God with your heart, mind, and voice to God. "Upright", "Merciful", "Lover of Mainkind."</string>
+    <string name="textPraise">1. Praises</string>
+    <string name="hintThankful">Thank Him for salvation, the many blessings in your life, protection, provision, open doors, opportunities, and His gifts to man.</string>
+    <string name="textThanks">2. Thanks</string>
+    <string name="textConfess">3. Confess</string>
+    <string name="textOthers">5. Others</string>
     <string name="action_settings">Settings</string>
     <string name="messageConfirmSave">Are you sure you want to save this entry?</string>
     <string name="messageConfirmDeleteAll">Are you sure you want to delete all prayers?</string>
     <string name="messageSaved">Saved</string>
-    <string name="hintPetition">Prayers</string>
-    <string name="title_activity_prayer_list">Prayer Log</string>
+    <string name="hintPetition">This is the time to ask God for His divine help to meet neets, solve problems, work in someones life, etc.</string>
+    <string name="title_activity_prayer_list">Christian Prayer Log</string>
+    <string name="messageTOC">Sv.marinova@gmail.com ("The Author" “we” “us” or “our”) respects the privacy of users of Our Mobile PryaerLog App (“PryaerLog App” or “App”), and the following Terms and Conditions, End User License Agreement and Privacy Policy (the “Terms”) cover your use of this App.
+OWNERSHIP OF CONTENT
+User acknowledges that the Author owns and retains all rights, title and interest in our Content, including but not limited to copyrights, and User shall not, by virtue of this User Agreement or by virtue of its access to or use of our Content, obtain any rights, title or interest in our Content other than the license rights granted herein.
+RIGHT TO CHANGE THE APP AT ANY TIME
+The Author has the rights to change the App at any time as it seems fit; we shall notify users upon any changes to the App.
+PROHIBITED USES
+Use the App for any illegal purpose is prohibited. You must not use the App to harm others or the App service. For example, you must not use the App to harm, threaten, or harass another person, organization. You must not: damage, disable, overburden, or impair the App (or any network connected to or delivering the App to you); resell or redistribute the App or any part of it; use any unauthorized means to modify, reroute, or gain access to the App or attempt to carry out these activities; or use any automated process or service (such as a bot, a spider, periodic caching of information stored b) to access or use the App.
+WARRANTY AND LIABILITY DISCLAIMERS
+The App is provided “as is” without warranties of any kind and author’s liability to you is limited.
+PRIVACY AND DATA COLLECTION
+The Author would never share any data collected using the app. All data is stored locally on the device’s database management system and cannot be exposed or shared The Author would never share any data collected using the app. All data is stored locally on the device’s database management system and cannot be exposed or shared using the App’s interface and using the App’s codebase.
+</string>
+    <string name="messageAbout">The app guides users into 5 elements of prayer following the ACTS Prayer model https://teachthemdiligently.net/wp-content/uploads/2016/05/ACTS-PRAYER-GUIDE-1.pdf :
+-	Praise
+-	Thanks
+-	Confess
+-	Petition (prayers for ourselves)
+-	Others (prayers for others)
+Each prayer entry is recorded into an internal database and can be accessed using the creation datetime stamp.
+NOTE: Facebook login functionality is experimental in the current version and may be used in the future.
+</string>
     <string name="facebook_app_id">375785864362680</string>
 <string name="fb_login_protocol_scheme">fb375785864362680</string>
 <string name="facebook_client_token">81a587398de101cf4d1d35af8431cda7</string>
     <string name="textBtnAdd">Add Prayer</string>
+    <string name="textOk">Ok</string>
+    <string name="titleTOC">Terms and Conditions</string>
+    <string name="titleAbout">About Christian Prayer Log App</string>
+    <string name="messageFacebookLoginSuccess">Facebook Login Success</string>
 </resources>

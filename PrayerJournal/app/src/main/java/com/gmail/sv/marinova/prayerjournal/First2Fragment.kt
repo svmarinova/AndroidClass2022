@@ -6,19 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.findNavController
-import androidx.room.Database
 import com.facebook.CallbackManager
 import com.facebook.login.widget.LoginButton
 import com.gmail.sv.marinova.prayerjournal.databinding.FragmentFirst2Binding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import java.time.LocalDateTime
 import java.util.*
 import com.facebook.FacebookException
 
@@ -70,16 +62,16 @@ class First2Fragment : Fragment() {
         binding.btnDeleteAll.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
                 .setMessage(getString(R.string.messageConfirmDeleteAll))
-                .setPositiveButton("Save") { dialog, which ->
+                .setPositiveButton("Save") { _, _ ->
                     prayerLogViewModel.deleteAll()
                 }
-                .setNegativeButton("Cancel") { dialog, which ->
+                .setNegativeButton("Cancel") { _, _ ->
                     // Respond to positive button press
                 }
                 .show()
         }
         var callbackManager = CallbackManager.Factory.create();
-        var loginButton = view?.findViewById<LoginButton>(R.id.login_button)
+        var loginButton = view.findViewById<LoginButton>(R.id.login_button)
         loginButton?.setReadPermissions(Arrays.asList(EMAIL));
         loginButton?.setFragment(this);
         loginButton!!.registerCallback(callbackManager, object : FacebookCallback<LoginResult?> {
@@ -87,10 +79,10 @@ class First2Fragment : Fragment() {
                 // App code
             }
 
-            override fun onError(exception: FacebookException) {
+            override fun onError(error: FacebookException) {
                 MaterialAlertDialogBuilder(requireContext())
-                    .setMessage(exception.message)
-                    .setPositiveButton("OK") { dialog, which ->
+                    .setMessage(error.message)
+                    .setPositiveButton(R.string.textOk) { _, _ ->
                     }
                     .show()
                 // App code
@@ -99,8 +91,8 @@ class First2Fragment : Fragment() {
             override fun onSuccess(result: LoginResult?) {
                 //TODO("Not yet implemented")
                 MaterialAlertDialogBuilder(requireContext())
-                    .setMessage("Facebook Login Success")
-                    .setPositiveButton("OK") { dialog, which ->
+                    .setMessage(getString(R.string.messageFacebookLoginSuccess))
+                    .setPositiveButton("OK") { _, _ ->
                     }
                     .show()
             }
